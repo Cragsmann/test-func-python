@@ -1,0 +1,13 @@
+specVersion: 0.36.0
+name: test-func-python
+runtime: python
+registry: image-registry.openshift-image-registry.svc:5000/default
+created: 2026-06-19T08:00:00.000000+00:00
+build:
+  builder: pack
+  buildpacks:
+    - paketo-buildpacks/python
+invocation:
+  format: http
+deploy:
+  namespace: default
